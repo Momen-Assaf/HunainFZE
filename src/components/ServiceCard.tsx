@@ -4,6 +4,7 @@ const ServiceCard = ({
     imageSrc = "../logo.svg",
     borderColor = "#9747ff",
     shadowColor = "#151925",
+    backgroundColor = "#323846", // New prop for dynamic background color
 }) => {
     return (
         <div className="relative w-[440px] h-[860px]">
@@ -12,8 +13,11 @@ const ServiceCard = ({
                 style={{ borderColor }}
             >
                 <div
-                    className="absolute w-[402px] h-[402px] top-[19px] left-[19px] border border-solid shadow-lg bg-[#323846] rounded-[25px]"
-                    style={{ boxShadow: `4px 4px 1px ${shadowColor}` }}
+                    className="absolute w-[402px] h-[402px] top-[19px] left-[19px] border border-solid shadow-lg rounded-[25px]"
+                    style={{
+                        backgroundColor, // Dynamic background color
+                        boxShadow: `4px 4px 1px ${shadowColor}`, // Dynamic shadow color
+                    }}
                 >
                     <div className="relative w-full h-[282px] top-[59px]">
                         <img
