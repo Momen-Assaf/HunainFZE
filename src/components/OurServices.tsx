@@ -1,3 +1,9 @@
+const BORDER_COLOR = "#9747ff";
+const SHADOW_COLOR = "#151925";
+const BACKGROUND_COLOR = "#323846";
+const HEADER_TEXT_PRIMARY = "#363636";
+const HEADER_TEXT_SECONDARY = "#1e407d";
+
 import ServiceCard from "./ServiceCard";
 import icon1 from "./icon1.svg";
 import icon2 from "./icon2.svg";
@@ -12,7 +18,7 @@ const OurServices = () => {
                     <ServiceCard
                         title="Mobile Development"
                         description="Build robust and scalable mobile applications."
-                        iconSrc={icon1} // Updated prop name
+                        iconSrc={icon1}
                     />
                 </div>
 
@@ -21,7 +27,7 @@ const OurServices = () => {
                     <ServiceCard
                         title="UX-UI Design"
                         description="Craft intuitive and user-friendly designs."
-                        iconSrc={icon2} // Updated prop name
+                        iconSrc={icon2}
                     />
                 </div>
 
@@ -30,15 +36,15 @@ const OurServices = () => {
                     <ServiceCard
                         title="Web Development"
                         description="Design and develop cutting-edge web solutions."
-                        iconSrc={icon3} // Updated prop name
+                        iconSrc={icon3}
                     />
                 </div>
             </div>
 
             {/* Header */}
             <p className="absolute w-[232px] top-[119px] left-[604px] [font-family:'Inter-ExtraBold',Helvetica] font-extrabold text-transparent text-4xl tracking-[0] leading-[normal]">
-                <span className="text-[#363636]">Our </span>
-                <span className="text-[#1e407d]">Services</span>
+                <span style={{ color: HEADER_TEXT_PRIMARY }}>Our </span>
+                <span style={{ color: HEADER_TEXT_SECONDARY }}>Services</span>
             </p>
         </div>
     );
