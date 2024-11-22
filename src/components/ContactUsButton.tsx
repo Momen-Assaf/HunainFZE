@@ -2,7 +2,7 @@ import React from "react";
 import iconArrowRight from "./icon-arrow-right.png";
 import image from "./image.png";
 
-export const Box = (): JSX.Element => {
+const ContactUsButton = () => {
   return (
     <div className="relative w-60 h-[170px]">
       <div className="fixed w-60 h-[170px] top-0 left-0 rounded-[5px] overflow-hidden border border-dashed border-[#9747ff]">
@@ -36,4 +36,6 @@ export const Box = (): JSX.Element => {
       </div>
     </div>
   );
-};
+}
+
+export default ContactUsButton

@@ -1,6 +1,6 @@
 import React from "react";
 import { BluebirdSmall } from "./BluebirdSmall";
-import { ContactUs } from "./ContactUs"
+import { ContactUs } from "./components/ContactUs"
 import { Home } from "./Home";
 import { WebDevelopment } from "./WebDevelopment";
 import effect from "./effect.svg";
