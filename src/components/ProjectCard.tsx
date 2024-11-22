@@ -1,6 +1,6 @@
-import React, { useState } from "react";
+import { useState } from "react";
 
-const HoverCard = ({
+const ProjectCard = ({
   defaultImg = "/default-image.png",
   hoverImg = "/hover-image.png",
   url = "https://example.com",
@@ -29,4 +29,4 @@ const HoverCard = ({
   );
 };
 
-export default HoverCard;
+export default ProjectCard;
