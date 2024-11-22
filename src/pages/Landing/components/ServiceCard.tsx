@@ -2,6 +2,7 @@ const ServiceCard = ({
     title = "Service Title",
     description = "Lorem ipsum dolor sit amet consectetur. Pretium ac enim sapien egestas aenean dapibus. Diam nunc morbi rutrum aliquam sit sit lacus.",
     iconSrc = "../logo.svg",
+    className = "", // Default className (empty string)
 }) => {
     const borderColor = "#9747ff";
     const shadowColor = "#151925";

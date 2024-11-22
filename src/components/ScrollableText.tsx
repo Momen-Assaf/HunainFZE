@@ -1,6 +1,7 @@
 const ScrollableText = ({
     text = "Click Me", // Default text
-    targetSectionId = "default-section", // Default target section id
+    targetSectionId = "default-section", // Default target section 
+    className = "", // Default className (empty string)
 }) => {
     const handleClick = () => {
         if (targetSectionId) {
