@@ -1,5 +1,3 @@
-import React from "react";
-
 const ScrollableText = ({
     text = "Click Me", // Default text
     targetSectionId = "default-section", // Default target section id
