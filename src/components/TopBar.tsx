@@ -20,7 +20,7 @@ const TopBar = () => {
         <div className="flex justify-between">
 
           {/* Navigation Links */}
-          <nav className="flex items-center space-x-8">
+          <nav className="flex items-center space-x-8 ">
             <ScrollableText targetSectionId="home" text="Home" />
             <ScrollableText targetSectionId="about" text="About Us" />
             <ScrollableText targetSectionId="services" text="Services" />
@@ -29,6 +29,7 @@ const TopBar = () => {
 
           <CustomButton
             text="Contact Us"
+            buttonClass="ms-5"
           />
 
         </div>
