@@ -17,7 +17,8 @@ const theme = {
         medium: "20px", // Font size of 20px
     },
     borderRadius: {
-        md: "15px", // Rounded corners
+        md: "15px", 
+        lg: "25px",
     },
 };
 

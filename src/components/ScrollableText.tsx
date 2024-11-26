@@ -1,10 +1,10 @@
-import React, { useState } from "react";
-import theme from "../theme"; // Import the theme
+import { useState } from "react";
+import theme from "../theme";
 
 const ScrollableText = ({
-    text = "Click Me", // Default text
-    targetSectionId = "default-section", // Default target section
-    className = "", // Default className (empty string)
+    text = "Click Me",
+    targetSectionId = "default-section",
+    className = "",
 }) => {
     const [isHovered, setIsHovered] = useState(false);
 
@@ -21,14 +21,14 @@ const ScrollableText = ({
         <span
             className={`cursor-pointer transition-colors ${className}`}
             onClick={handleClick}
-            onMouseEnter={() => setIsHovered(true)} // Set hover state to true
-            onMouseLeave={() => setIsHovered(false)} // Set hover state to false
+            onMouseEnter={() => setIsHovered(true)}
+            onMouseLeave={() => setIsHovered(false)}
             style={{
-                color: isHovered ? theme.colors.primary : theme.colors.textDark, // Conditional color change
-                fontSize: theme.fontSize.medium, // Use font size 20px from theme
-                fontWeight: theme.fontWeight.semiBold, // Use semi-bold font weight
-                fontFamily: theme.fonts.primary, // Apply primary font from theme
-                transition: "color 0.3s", // Smooth color transition for hover
+                color: isHovered ? theme.colors.primary : theme.colors.textDark,
+                fontSize: theme.fontSize.medium,
+                fontWeight: theme.fontWeight.semiBold,
+                fontFamily: theme.fonts.primary,
+                transition: "color 0.3s",
             }}
         >
             {text}

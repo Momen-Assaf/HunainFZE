@@ -1,10 +1,15 @@
 import CustomButton from "./CustomButton";
 import ScrollableText from "./ScrollableText";
 import { logo, arrowIcon } from "../assets"
+import theme from "../theme";
 
 const TopBar = () => {
   return (
-    <div className="w-full bg-[#fbfbfb] shadow-md rounded-b-[25px]">
+    <div className="w-full shadow-md"
+      style={{
+        backgroundColor: theme.colors.background_secondary,
+        // borderRadius: theme.borderRadius.lg,
+      }}>
       <div className="container mx-auto flex items-center justify-between px-6 py-4">
         {/* Logo Section */}
         <div className="flex items-center">

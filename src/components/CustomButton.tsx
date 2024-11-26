@@ -1,9 +1,8 @@
-import React from "react";
-import theme from "../theme"; // Ensure your theme is imported
+import theme from "../theme";
 
 const CustomButton = ({
     text = "Contact Us",
-    icon = "→", // Default arrow icon
+    icon = "",
     buttonClass = "",
     onClick = () => { }
 }) => {
@@ -19,12 +18,10 @@ const CustomButton = ({
             }}
         >
             <span>{text}</span>
-            {/* Conditionally render icon if available */}
             {icon && (
                 <img
                     src={icon}
                     alt="Icon"
-                    className="w-4 h-4" // Adjust size as needed
                 />
             )}
         </button>
