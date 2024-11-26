@@ -4,6 +4,7 @@ const ProjectCard = ({
   defaultImg = "/default-image.png",
   hoverImg = "/hover-image.png",
   url = "https://example.com",
+  className = "", // Default className (empty string)
 }) => {
   const [hovered, setHovered] = useState(false);
 
