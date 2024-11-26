@@ -3,22 +3,36 @@ const theme = {
         primary: "#1E407D", // Primary color
         textLight: "#FFFFFF", // Light text color
         textDark: "#363636", // Dark text color
-        background_primary: "#FFFFFF", // Background color for primary
+        background_primary: "#FFFFFF", // Primary background color
         background_secondary: "#FBFBFB", // Secondary background color
+        hover: "#1C3A6A", // Color for hover effects
     },
     fonts: {
         primary: "Inter, sans-serif", // Primary font
         secondary: "Sen, sans-serif", // Secondary font
     },
     fontWeight: {
+        light: 300, // Light font weight
+        regular: 400, // Regular font weight
+        medium: 500, // Medium font weight
         semiBold: 600, // Semi-bold font weight
+        bold: 700, // Bold font weight
     },
     fontSize: {
+        small: "14px", // Font size for smaller text
         medium: "20px", // Font size of 20px
+        large: "32px", // Font size for headers
+        xLarge: "96px", // Extra-large font size
     },
     borderRadius: {
-        md: "15px", 
-        lg: "25px",
+        sm: "5px", // Small border radius
+        md: "15px", // Medium border radius
+        lg: "25px", // Large border radius
+        full: "9999px", // Full border radius for pill shapes
+    },
+    boxShadow: {
+        light: "0px 2px 4px rgba(0, 0, 0, 0.1)", // Light shadow
+        medium: "0px 4px 6px rgba(0, 0, 0, 0.2)", // Medium shadow
     },
 };
 
