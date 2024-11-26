@@ -1,29 +1,29 @@
 import React from "react";
 import theme from "../theme"; // Ensure your theme is imported
 
-const CustomButton = ({ 
-    text = "Contact Us", 
+const CustomButton = ({
+    text = "Contact Us",
     icon = "→", // Default arrow icon
-    buttonClass = "", 
-    onClick = () => {} 
+    buttonClass = "",
+    onClick = () => { }
 }) => {
     return (
         <button
             onClick={onClick}
-            className={`relative flex items-center justify-center gap-2 sm:w-60 h-12 sm:h-14 text-white font-semibold text-base sm:text-xl rounded-md hover:opacity-90 transition-all ${buttonClass}`}
+            className={`relative flex items-center justify-center gap-2 ${buttonClass} text-white font-semibold text-base sm:text-xl rounded-md hover:opacity-90 transition-all`}
             style={{
-                backgroundColor: theme.colors.primary, // Apply dynamic background
-                fontFamily: theme.fonts.primary, // Apply primary font
-                borderRadius: theme.borderRadius?.md || "0.375rem", // Fallback for missing theme values
+                backgroundColor: theme.colors.primary,
+                fontFamily: theme.fonts.primary,
+                borderRadius: theme.borderRadius.md,
                 boxShadow: `0px 2px 4px rgba(0, 0, 0, 0.2)`,
             }}
         >
             <span>{text}</span>
             {/* Conditionally render icon if available */}
             {icon && (
-                <img 
-                    src={icon} 
-                    alt="Icon" 
+                <img
+                    src={icon}
+                    alt="Icon"
                     className="w-4 h-4" // Adjust size as needed
                 />
             )}

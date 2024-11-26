@@ -25,6 +25,7 @@ const TopBar = () => {
           <CustomButton
             text="Contact Us"
             icon="/assets/images/icons/arrow_right.svg"
+            buttonClass=" w-[174px] h-[55px]"
           />
         </nav>
       </div>
