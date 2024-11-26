@@ -1,7 +1,6 @@
 import CustomButton from "./CustomButton";
 import ScrollableText from "./ScrollableText";
-
-const image1 = "/assets/images/logo.png";
+import { logo, arrowIcon } from "../assets"
 
 const TopBar = () => {
   return (
@@ -12,7 +11,7 @@ const TopBar = () => {
           <img
             className="w-16 h-16 object-cover"
             alt="Logo"
-            src={image1}
+            src={logo}
           />
         </div>
 
@@ -24,7 +23,7 @@ const TopBar = () => {
           <ScrollableText targetSectionId="portfolio" text="Portfolio" />
           <CustomButton
             text="Contact Us"
-            icon="/assets/images/icons/arrow_right.svg"
+            icon={arrowIcon}
             buttonClass=" w-[174px] h-[55px]"
           />
         </nav>
