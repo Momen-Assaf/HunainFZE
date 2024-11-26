@@ -1,7 +1,7 @@
 import CustomButton from "./CustomButton";
 import ScrollableText from "./ScrollableText";
 
-const image1 = "https://via.placeholder.com/100";
+const image1 = "/assets/images/logo.png";
 
 const TopBar = () => {
   return (
