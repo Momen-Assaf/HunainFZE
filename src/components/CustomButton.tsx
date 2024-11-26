@@ -1,5 +1,5 @@
 import React from "react";
-import theme from "../theme"; // Ensure theme is imported correctly
+import theme from "../theme"; // Ensure your theme is imported
 
 const CustomButton = ({ 
     text = "Contact Us", 
@@ -10,24 +10,23 @@ const CustomButton = ({
     return (
         <button
             onClick={onClick}
-            className={`relative flex items-center justify-center gap-2 hover:opacity-90 transition-all ${buttonClass}`}
+            className={`relative flex items-center justify-center gap-2 sm:w-60 h-12 sm:h-14 text-white font-semibold text-base sm:text-xl rounded-md hover:opacity-90 transition-all ${buttonClass}`}
             style={{
-                backgroundColor: theme.colors.primary, // Theme-based background color
-                fontFamily: theme.fonts.primary, // Theme-based font family
-                fontSize: theme.fontSize.medium,
-                fontWeight: theme.fontWeight.semiBold, // Semi-bold weight
-                color: theme.colors.textLight,
-                width: "174px", // Fixed width
-                height: "55px", // Fixed height
-                borderRadius: theme.borderRadius.md, // Fallback for missing theme values
-                boxShadow: `0px 2px 4px rgba(0, 0, 0, 0.2)`, // Box shadow
-                // display: "flex",
-                // alignItems: "center",
-                // justifyContent: "center",
+                backgroundColor: theme.colors.primary, // Apply dynamic background
+                fontFamily: theme.fonts.primary, // Apply primary font
+                borderRadius: theme.borderRadius?.md || "0.375rem", // Fallback for missing theme values
+                boxShadow: `0px 2px 4px rgba(0, 0, 0, 0.2)`,
             }}
         >
             <span>{text}</span>
-            <span style={{ fontSize: "20px" }}>{icon}</span>
+            {/* Conditionally render icon if available */}
+            {icon && (
+                <img 
+                    src={icon} 
+                    alt="Icon" 
+                    className="w-4 h-4" // Adjust size as needed
+                />
+            )}
         </button>
     );
 };

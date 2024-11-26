@@ -2,7 +2,6 @@ import CustomButton from "./CustomButton";
 import ScrollableText from "./ScrollableText";
 
 const image1 = "https://via.placeholder.com/100";
-const iconArrowRight = "https://via.placeholder.com/16x16";
 
 const TopBar = () => {
   return (
@@ -17,22 +16,17 @@ const TopBar = () => {
           />
         </div>
 
-        <div className="flex justify-between">
-
-          {/* Navigation Links */}
-          <nav className="flex items-center space-x-8 ">
-            <ScrollableText targetSectionId="home" text="Home" />
-            <ScrollableText targetSectionId="about" text="About Us" />
-            <ScrollableText targetSectionId="services" text="Services" />
-            <ScrollableText targetSectionId="portfolio" text="Portfolio" />
-          </nav>
-
+        {/* Navigation Links */}
+        <nav className="flex items-center space-x-[60px]">
+          <ScrollableText targetSectionId="home" text="Home" />
+          <ScrollableText targetSectionId="about" text="About Us" />
+          <ScrollableText targetSectionId="services" text="Services" />
+          <ScrollableText targetSectionId="portfolio" text="Portfolio" />
           <CustomButton
             text="Contact Us"
-            buttonClass="ms-5"
+            icon="/assets/images/icons/arrow_right.svg"
           />
-
-        </div>
+        </nav>
       </div>
     </div>
   );
