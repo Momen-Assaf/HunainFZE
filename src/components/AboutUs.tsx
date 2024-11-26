@@ -31,7 +31,6 @@ const AboutUs = () => {
                             <CustomButton
                                 buttonClass='!h-11 !relative !bg-[#1e407d] !w-[150px]'
                                 text='See More'
-                                iconSrc=''
                             />
 
                             {/* <ContactUs

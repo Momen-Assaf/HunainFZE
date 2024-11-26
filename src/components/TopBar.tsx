@@ -1,3 +1,4 @@
+import CustomButton from "./CustomButton";
 import ScrollableText from "./ScrollableText";
 
 const image1 = "https://via.placeholder.com/100";
@@ -26,17 +27,10 @@ const TopBar = () => {
             <ScrollableText targetSectionId="portfolio" text="Portfolio" />
           </nav>
 
-          {/* Contact Button */}
-          <div className="flex items-center">
-            <button className="flex items-center gap-2 px-6 py-2 bg-[#1e407d] text-white rounded-[15px] shadow hover:bg-[#15325d] transition">
-              <span className="font-semibold text-lg">Contact Us</span>
-              <img
-                className="w-4 h-4"
-                alt="Arrow Icon"
-                src={iconArrowRight}
-              />
-            </button>
-          </div>
+          <CustomButton
+            text="Contact Us"
+          />
+
         </div>
       </div>
     </div>

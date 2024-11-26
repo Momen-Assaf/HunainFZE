@@ -1,29 +1,23 @@
-const CustomButton = ({ text = "Contact Us", iconSrc = "", buttonClass = "" }) => {
+import theme from "../theme"; // Assuming theme is defined and imported
+
+const CustomButton = ({ 
+    text = "Contact Us", 
+    icon = "→", // Default arrow icon
+    buttonClass = "", 
+    onClick = () => {} 
+}) => {
     return (
-        <div className={`relative w-60 h-[170px] ${buttonClass}`}>
-            <div className="fixed w-60 h-[170px] top-0 left-0 rounded-[5px] overflow-hidden border border-dashed border-[#9747ff]">
-                {/* Render button twice if needed */}
-                {["top-5", "top-[95px]"].map((position, index) => (
-                    <div
-                        key={index}
-                        className={`absolute w-[200px] h-[55px] left-5 bg-[#01eeff] rounded-[15px] ${position}`}
-                    >
-                        <div className="flex w-[200px] h-[55px] items-center justify-center gap-2.5 px-[47px] py-[3px] relative bg-[#01eeff] rounded-[15px]">
-                            <div className="relative w-fit ml-[-13.00px] [font-family:'Inter-SemiBold',Helvetica] font-semibold text-[#151925] text-xl tracking-[0] leading-[44px] whitespace-nowrap">
-                                {text}
-                            </div>
-                            {iconSrc && (
-                                <img
-                                    className="relative w-4 h-4 mr-[-14.50px]"
-                                    alt="Icon arrow right"
-                                    src={iconSrc}
-                                />
-                            )}
-                        </div>
-                    </div>
-                ))}
-            </div>
-        </div>
+        <button
+            onClick={onClick}
+            className={`relative flex items-center justify-center gap-2 w-full sm:w-60 h-12 sm:h-14 bg-[${theme.colors.primary}] text-white font-semibold text-base sm:text-xl rounded-[${theme.borderRadius.md}] hover:bg-opacity-90 transition-all ${buttonClass}`}
+            style={{
+                fontFamily: theme.fonts.primary,
+                boxShadow: `0px 2px 4px rgba(0, 0, 0, 0.2)`,
+            }}
+        >
+            <span>{text}</span>
+            <span className="text-lg sm:text-xl">{icon}</span>
+        </button>
     );
 };
 
