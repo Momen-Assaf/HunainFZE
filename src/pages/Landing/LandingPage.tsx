@@ -1,6 +1,7 @@
 import AboutUs from "../../components/AboutUs"
 import Effect from "./components/Effect"
 import HeroSection from "./components/HeroSection"
+import OurProjects from "./components/OurProjects"
 import OurServices from "./components/OurServices"
 
 const LandingPage = () => {
@@ -10,6 +11,7 @@ const LandingPage = () => {
       <Effect />
       <AboutUs />
       <OurServices />
+      <OurProjects />
     </div>
   )
 }
