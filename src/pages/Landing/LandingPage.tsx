@@ -1,3 +1,4 @@
+import AboutUs from "../../components/AboutUs"
 import Effect from "./components/Effect"
 import HeroSection from "./components/HeroSection"
 
@@ -6,6 +7,7 @@ const LandingPage = () => {
     <div>
       <HeroSection />
       <Effect />
+      <AboutUs />
     </div>
   )
 }
