@@ -1,6 +1,5 @@
 import theme from "../../../theme";
 import CustomButton from "../../../components/CustomButton";
-import { effect } from "../../../assets";
 
 const HeroSection = () => {
   return (
