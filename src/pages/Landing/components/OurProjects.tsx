@@ -1,5 +1,5 @@
 import ServiceCard from "./ServiceCard";
-import { codeIcon, mobileIcon, designIcon } from "../../../assets";
+import { codeIcon, mobileIcon, designIcon, vrZoneLogo, vrZoneHover, vrZoneUrl, blueBirdLogo, blueBirdHover, blueBirdUrl } from "../../../assets";
 import theme from "../../../theme";
 import ProjectCard from "../../../components/ProjectCard";
 
@@ -20,8 +20,16 @@ const OurProjects = () => {
                 </h2>
             </div>
             <div className="container mx-auto flex flex-wrap justify-center gap-8">
-                <ProjectCard />
-                <ProjectCard />
+                <ProjectCard
+                    logo={vrZoneLogo}
+                    hoverImg={vrZoneHover}
+                    url={vrZoneUrl}
+                />
+                <ProjectCard
+                    logo={blueBirdLogo}
+                    hoverImg={blueBirdHover}
+                    url={blueBirdUrl}
+                />
             </div>
 
 

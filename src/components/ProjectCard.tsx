@@ -2,7 +2,7 @@ import { useState } from "react";
 import theme from "../theme";
 
 const ProjectCard = ({
-  defaultImg = "/default-image.png",
+  logo = "/default-image.png",
   hoverImg = "/hover-image.png",
   url = "https://example.com",
   className = "", // Default className (empty string)
@@ -27,14 +27,18 @@ const ProjectCard = ({
         boxShadow: hovered ? "0px 10px 20px rgba(0, 0, 0, 0.2)" : "none", // Add shadow on hover
       }}
     >
-      <img
-        src={hovered ? hoverImg : defaultImg}
-        alt="Logo"
-        className="w-[150px] h-auto transition-all duration-300 ease-in-out" // Smooth transition for image change
-        style={{
-          transform: hovered ? "scale(1.1)" : "scale(1)", // Scale up the image on hover
-        }}
-      />
+      <div className="relative w-full h-full">
+        <img
+          src={logo}
+          alt="Logo"
+          className={`absolute w-full h-full object-cover transition-opacity duration-300 ease-in-out ${hovered ? "opacity-0" : "opacity-100"}`} // Default image
+        />
+        <img
+          src={hoverImg}
+          alt="Hovered Logo"
+          className={`absolute w-full h-full object-cover transition-opacity duration-300 ease-in-out ${hovered ? "opacity-100" : "opacity-0"}`} // Hovered image
+        />
+      </div>
     </div>
   );
 };

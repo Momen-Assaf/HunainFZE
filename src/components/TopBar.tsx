@@ -25,7 +25,7 @@ const TopBar = () => {
           <ScrollableText targetSectionId="hero" text="Home" />
           <ScrollableText targetSectionId="aboutUs" text="About Us" />
           <ScrollableText targetSectionId="ourServices" text="Services" />
-          <ScrollableText targetSectionId="portfolio" text="Portfolio" />
+          <ScrollableText targetSectionId="ourProjects" text="Portfolio" />
           <CustomButton
             text="Contact Us"
             icon={arrowIcon}
