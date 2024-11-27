@@ -6,7 +6,7 @@ const OurServices = () => {
     return (
         <section className="py-[120px]" id="ourServices">
             {/* Header */}
-            <div className="text-center mb-12">
+            <div className="text-center mb-[90px]">
                 <h2
                     style={{
                         fontFamily: theme.fonts.primary,
