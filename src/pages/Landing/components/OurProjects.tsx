@@ -1,6 +1,7 @@
 import ServiceCard from "./ServiceCard";
 import { codeIcon, mobileIcon, designIcon } from "../../../assets";
 import theme from "../../../theme";
+import ProjectCard from "../../../components/ProjectCard";
 
 const OurProjects = () => {
     return (
@@ -18,6 +19,11 @@ const OurProjects = () => {
                     <span style={{ color: theme.colors.primary }}>Projects</span>
                 </h2>
             </div>
+            <div className="container mx-auto flex flex-wrap justify-center gap-8">
+                <ProjectCard />
+                <ProjectCard />
+            </div>
+
 
         </section>
     );
