@@ -1,4 +1,5 @@
 import AboutUs from "../../components/AboutUs"
+import ContactUs from "../../components/ContactUs"
 import Effect from "./components/Effect"
 import HeroSection from "./components/HeroSection"
 import OurProjects from "./components/OurProjects"
@@ -12,6 +13,7 @@ const LandingPage = () => {
       <AboutUs />
       <OurServices />
       <OurProjects />
+      <ContactUs />
     </div>
   )
 }

@@ -31,8 +31,6 @@ const OurProjects = () => {
                     url={blueBirdUrl}
                 />
             </div>
-
-
         </section>
     );
 };

@@ -1,53 +1,94 @@
 const ContactUs = () => {
     return (
-        <div className="absolute w-[1440px] h-[900px] top-[3500px] left-0">
-
-            <p className="absolute w-[232px] top-[119px] left-[604px] [font-family:'Inter-ExtraBold',Helvetica] font-extrabold text-transparent text-4xl tracking-[0] leading-[normal]">
+        <div className="relative w-full max-w-screen-xl mx-auto py-16">
+            <p className="text-center text-4xl font-extrabold text-transparent tracking-[0] leading-[normal]">
                 <span className="text-[#363636]">Contact </span>
                 <span className="text-[#1e407d]">Us!</span>
             </p>
 
-            <div className="absolute w-[502px] h-[60px] top-[268px] left-[210px]">
-                <div className="relative w-[500px] h-[60px] bg-[#1e407dbf] rounded-[15px]">
-                    <div className="absolute w-[139px] top-[18px] left-[26px] [font-family:'Inter-Medium',Helvetica] font-medium text-[#ffffffe6] text-2xl tracking-[0] leading-[normal]">
+            {/* Form container */}
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-12">
+                {/* First Name */}
+                <div className="relative w-full">
+                    <label
+                        htmlFor="first-name"
+                        className="absolute left-6 top-2 text-2xl font-medium text-[#ffffffe6]"
+                    >
                         First Name
-                    </div>
+                    </label>
+                    <input
+                        id="first-name"
+                        type="text"
+                        className="w-full h-14 px-6 py-2 bg-[#1e407dbf] text-[#ffffffe6] rounded-lg text-xl placeholder-transparent focus:outline-none focus:ring-2 focus:ring-[#1e407d] focus:border-[#1e407d]"
+                        placeholder="First Name"
+                    />
                 </div>
-            </div>
 
-            <div className="absolute w-[502px] h-[60px] top-[268px] left-[730px]">
-                <div className="relative w-[500px] h-[60px] bg-[#1e407dbf] rounded-[15px]">
-                    <div className="absolute w-[137px] top-[18px] left-[26px] [font-family:'Inter-Medium',Helvetica] font-medium text-[#ffffffe6] text-2xl tracking-[0] leading-[normal]">
+                {/* Last Name */}
+                <div className="relative w-full">
+                    <label
+                        htmlFor="last-name"
+                        className="absolute left-6 top-2 text-2xl font-medium text-[#ffffffe6]"
+                    >
                         Last Name
-                    </div>
+                    </label>
+                    <input
+                        id="last-name"
+                        type="text"
+                        className="w-full h-14 px-6 py-2 bg-[#1e407dbf] text-[#ffffffe6] rounded-lg text-xl placeholder-transparent focus:outline-none focus:ring-2 focus:ring-[#1e407d] focus:border-[#1e407d]"
+                        placeholder="Last Name"
+                    />
                 </div>
-            </div>
 
-            <div className="absolute w-[502px] h-[60px] top-[348px] left-[730px]">
-                <div className="relative w-[500px] h-[60px] bg-[#1e407dbf] rounded-[15px]">
-                    <div className="absolute w-[181px] top-[15px] left-[26px] [font-family:'Inter-Medium',Helvetica] font-medium text-[#ffffffe6] text-2xl tracking-[0] leading-[normal]">
-                        Email Address
-                    </div>
-                </div>
-            </div>
-
-            <div className="absolute w-[502px] h-[60px] top-[348px] left-[210px]">
-                <div className="relative w-[500px] h-[60px] bg-[#1e407dbf] rounded-[15px]">
-                    <div className="absolute w-[173px] top-[15px] left-[26px] [font-family:'Inter-Medium',Helvetica] font-medium text-[#ffffffe6] text-2xl tracking-[0] leading-[normal]">
+                {/* Mobile Number */}
+                <div className="relative w-full">
+                    <label
+                        htmlFor="mobile-number"
+                        className="absolute left-6 top-2 text-2xl font-medium text-[#ffffffe6]"
+                    >
                         Mob. Number
-                    </div>
+                    </label>
+                    <input
+                        id="mobile-number"
+                        type="tel"
+                        className="w-full h-14 px-6 py-2 bg-[#1e407dbf] text-[#ffffffe6] rounded-lg text-xl placeholder-transparent focus:outline-none focus:ring-2 focus:ring-[#1e407d] focus:border-[#1e407d]"
+                        placeholder="Mobile Number"
+                    />
                 </div>
-            </div>
 
-            <div className="absolute w-[1022px] h-[350px] top-[428px] left-[210px]">
-                <div className="relative w-[1020px] h-[350px] bg-[#1e407dbf] rounded-[15px]">
-                    <div className="absolute w-[181px] top-7 left-[25px] [font-family:'Inter-Medium',Helvetica] font-medium text-[#ffffffe6] text-2xl tracking-[0] leading-[normal]">
+                {/* Email Address */}
+                <div className="relative w-full">
+                    <label
+                        htmlFor="email"
+                        className="absolute left-6 top-2 text-2xl font-medium text-[#ffffffe6]"
+                    >
+                        Email Address
+                    </label>
+                    <input
+                        id="email"
+                        type="email"
+                        className="w-full h-14 px-6 py-2 bg-[#1e407dbf] text-[#ffffffe6] rounded-lg text-xl placeholder-transparent focus:outline-none focus:ring-2 focus:ring-[#1e407d] focus:border-[#1e407d]"
+                        placeholder="Email Address"
+                    />
+                </div>
+
+                {/* Message */}
+                <div className="relative w-full md:col-span-2">
+                    <label
+                        htmlFor="message"
+                        className="absolute left-6 top-2 text-2xl font-medium text-[#ffffffe6]"
+                    >
                         Your Message
-                    </div>
+                    </label>
+                    <textarea
+                        id="message"
+                        className="w-full h-48 px-6 py-4 bg-[#1e407dbf] text-[#ffffffe6] rounded-lg text-xl placeholder-transparent focus:outline-none focus:ring-2 focus:ring-[#1e407d] focus:border-[#1e407d]"
+                        placeholder="Your Message"
+                    />
                 </div>
             </div>
         </div>
-    )
-}
+    );
+};
 
-export default ContactUs
+export default ContactUs;
