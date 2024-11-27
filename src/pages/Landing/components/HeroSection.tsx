@@ -16,7 +16,7 @@ const HeroSection = () => {
             style={{
               fontFamily: theme.fonts.primary,
               color: theme.colors.textDark,
-              fontSize: "96px",
+              fontSize: theme.fontSize.xLarge,
             }}
             className="leading-tight font-medium"
           >
@@ -42,7 +42,7 @@ const HeroSection = () => {
             style={{
               fontFamily: theme.fonts.primary,
               color: theme.colors.textDark,
-              fontSize: "32px",
+              fontSize: theme.fontSize.large,
               fontWeight: theme.fontWeight.light,
             }}
           >

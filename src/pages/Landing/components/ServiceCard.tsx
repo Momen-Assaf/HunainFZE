@@ -20,10 +20,10 @@ const ServiceCard = ({
                 alt="Icon"
                 src={iconSrc}
             />
-            <h3 className="text-center font-extrabold text-2xl mb-4">
+            <h3 className="text-center">
                 {title}
             </h3>
-            <p className="text-center font-light text-base leading-6">
+            <p className="text-center">
                 {description}
             </p>
         </div>
