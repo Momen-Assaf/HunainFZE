@@ -29,7 +29,7 @@ const OurServices = () => {
                 />
                 <ServiceCard
                     title="Web Development"
-                    description="Develop web solutions that are responsive, fast, and scalable. Our team specializes in creating websites with a focus on clean code, and user experience."
+                    description="Develop web solutions that are responsive, fast, and scalable. We specializes in creating websites with a focus on clean code, and user experience."
                     iconSrc={codeIcon}
                     logoClass="w-[60px] h-[38px]"
                 />

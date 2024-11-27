@@ -10,7 +10,7 @@ const ServiceCard = ({
 
     return (
         <div
-            className={`relative w-[400px] h-[400px] px-5 pt-10 hover:scale-105 transition-transform border ${className}`}
+            className={`relative w-[400px] h-[400px] px-[25px] pt-10 hover:scale-105 transition-transform border ${className}`}
             style={{
                 borderColor: theme.colors.cardBorder,
                 boxShadow: theme.boxShadow.serviceCard,
@@ -31,7 +31,7 @@ const ServiceCard = ({
             }}>
                 {title}
             </h3>
-            <p className="text-center py-10"
+            <p className="text-center py-[33px]"
             style={{
                 color: theme.colors.textDark,
                 fontFamily: theme.fonts.primary,
