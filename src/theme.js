@@ -7,7 +7,7 @@ const theme = {
         background_secondary: "#FBFBFB", // Secondary background color
         hover: "#1C3A6A", // Color for hover effects
         shadowColor: "#F0F0F0",
-        cardBorder: "1px solid rgba(255, 255, 255, 0.25)" /* White color with 25% opacity */
+        cardBorder: "1px solid rgba(0, 0, 0, 0.25)" /* black color with 25% opacity */
     },
     fonts: {
         primary: "Inter, sans-serif", // Primary font

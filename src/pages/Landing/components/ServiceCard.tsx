@@ -5,25 +5,39 @@ const ServiceCard = ({
     description = "Lorem ipsum dolor sit amet consectetur. Pretium ac enim sapien egestas aenean dapibus. Diam nunc morbi rutrum aliquam sit sit lacus.",
     iconSrc = "../logo.svg",
     className = "",
+    logoClass = "",
 }) => {
 
     return (
         <div
-            className={`relative w-full max-w-[400px] h-auto p-8 rounded-[25px] shadow-md hover:scale-105 transition-transform border border-dashed ${className}`}
+            className={`relative w-[400px] h-[400px] px-5 pt-10 hover:scale-105 transition-transform border ${className}`}
             style={{
                 borderColor: theme.colors.cardBorder,
                 boxShadow: theme.boxShadow.serviceCard,
+                borderRadius: theme.borderRadius.lg
             }}
         >
             <img
-                className="w-[60px] h-[60px] mx-auto mb-4"
+                className={`${logoClass} mx-auto mb-2`}
                 alt="Icon"
                 src={iconSrc}
             />
-            <h3 className="text-center">
+            <h3 className="text-center"
+            style={{
+                color: theme.colors.textDark,
+                fontFamily: theme.fonts.primary,
+                fontSize: theme.fontSize.large,
+                fontWeight: theme.fontWeight.extraBold,
+            }}>
                 {title}
             </h3>
-            <p className="text-center">
+            <p className="text-center py-10"
+            style={{
+                color: theme.colors.textDark,
+                fontFamily: theme.fonts.primary,
+                fontSize: theme.fontSize.paragraph,
+                fontWeight: theme.fontWeight.light,
+            }}>
                 {description}
             </p>
         </div>
