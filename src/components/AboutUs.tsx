@@ -5,21 +5,24 @@ import { logo } from "../assets";
 const AboutUs = () => {
     return (
         <section
-            className="w-full bg-white shadow-md"
+            className="w-full bg-white shadow-md h-[900px]"
+            id="aboutUs"
             style={{
                 backgroundColor: theme.colors.background_primary,
                 borderColor: theme.colors.textLight,
-                boxShadow: `0px 2px 0px rgba(0, 0, 0, 0.25)`,
+                boxShadow: theme.boxShadow.light,
             }}
         >
-            <div className="container mx-auto flex flex-col lg:flex-row items-start gap-10 py-16 px-8">
+            <div className="container mx-auto flex flex-col lg:flex-row items-center gap-10 px-8 py-16">
                 {/* Left Section */}
-                <div className="flex flex-col flex-1 space-y-8">
+                <div className="flex flex-col flex-1 space-y-8 items-start">
                     {/* Heading */}
                     <h2
                         className="text-4xl font-extrabold"
                         style={{
                             fontFamily: theme.fonts.primary,
+                            fontSize: theme.fontSize.heading1,
+                            fontWeight: theme.fontWeight.semiBold,
                         }}
                     >
                         <span style={{ color: theme.colors.textDark }}>About </span>
@@ -32,6 +35,8 @@ const AboutUs = () => {
                         style={{
                             color: theme.colors.primary,
                             fontFamily: theme.fonts.primary,
+                            fontSize: theme.fontSize.heading2,
+                            fontWeight: theme.fontWeight.semiBold,
                         }}
                     >
                         Tech Development Agency
@@ -39,10 +44,11 @@ const AboutUs = () => {
 
                     {/* Paragraph */}
                     <p
-                        className="text-lg font-light leading-relaxed"
+                        className="text-lg font-light leading-relaxed text-start"
                         style={{
                             fontFamily: theme.fonts.primary,
                             color: theme.colors.textDark,
+                            fontSize: theme.fontSize.paragraph,
                         }}
                     >
                         Lorem ipsum dolor sit amet consectetur. Elementum nibh vulputate
@@ -60,10 +66,10 @@ const AboutUs = () => {
 
                 {/* Right Section */}
                 <div
-                    className="flex-1 flex justify-center items-center rounded-[50px] bg-opacity-50"
+                    className="flex-1 flex justify-center items-center bg-opacity-50 ms-[140px] w-[484px] h-[432px]"
                     style={{
                         backgroundColor: `${theme.colors.primary}80`, // 50% opacity of primary
-                        borderRadius: theme.borderRadius.lg,
+                        borderRadius: theme.borderRadius.xlg,
                     }}
                 >
                     <img

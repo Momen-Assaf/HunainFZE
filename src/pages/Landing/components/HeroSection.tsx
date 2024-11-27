@@ -1,9 +1,13 @@
 import theme from "../../../theme";
 import CustomButton from "../../../components/CustomButton";
+import { arrowIcon } from "../../../assets";
 
 const HeroSection = () => {
   return (
-    <section className="container mx-auto flex flex-col items-center space-y-8 pt-[100px]">
+    <section
+      className="container mx-auto flex flex-col items-center space-y-8 pt-[100px]"
+      id="hero"
+    >
       {/* Text and Button Section */}
       <div className="flex w-full items-center justify-between space-x-[100px]">
         {/* Left Section */}
@@ -46,7 +50,7 @@ const HeroSection = () => {
           </p>
           <CustomButton
             text="Get Started"
-            icon="/assets/images/icons/arrow_right.svg"
+            icon={arrowIcon}
             buttonClass="w-[200px] h-[55px]"
           />
         </div>

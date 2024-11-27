@@ -22,8 +22,8 @@ const TopBar = () => {
 
         {/* Navigation Links */}
         <nav className="flex items-center space-x-[60px]">
-          <ScrollableText targetSectionId="home" text="Home" />
-          <ScrollableText targetSectionId="about" text="About Us" />
+          <ScrollableText targetSectionId="hero" text="Home" />
+          <ScrollableText targetSectionId="aboutUs" text="About Us" />
           <ScrollableText targetSectionId="services" text="Services" />
           <ScrollableText targetSectionId="portfolio" text="Portfolio" />
           <CustomButton
