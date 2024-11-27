@@ -5,7 +5,7 @@ import { logo } from "../assets";
 const AboutUs = () => {
     return (
         <section
-            className="w-full bg-white shadow-md h-[900px]"
+            className="w-full bg-white shadow-md py-16"
             id="aboutUs"
             style={{
                 backgroundColor: theme.colors.background_primary,
@@ -15,14 +15,14 @@ const AboutUs = () => {
         >
             <div className="container mx-auto flex flex-col lg:flex-row items-center gap-10 px-8 py-16">
                 {/* Left Section */}
-                <div className="flex flex-col flex-1 space-y-8 items-start">
+                <div className="flex flex-col flex-1 items-start">
                     {/* Heading */}
                     <h2
-                        className="text-4xl font-extrabold"
                         style={{
                             fontFamily: theme.fonts.primary,
                             fontSize: theme.fontSize.heading1,
-                            fontWeight: theme.fontWeight.semiBold,
+                            fontWeight: theme.fontWeight.extraBold,
+                            marginBottom: "10px", 
                         }}
                     >
                         <span style={{ color: theme.colors.textDark }}>About </span>
@@ -31,12 +31,12 @@ const AboutUs = () => {
 
                     {/* Subheading */}
                     <h3
-                        className="text-2xl font-semibold"
                         style={{
                             color: theme.colors.primary,
                             fontFamily: theme.fonts.primary,
                             fontSize: theme.fontSize.heading2,
                             fontWeight: theme.fontWeight.semiBold,
+                            marginBottom: "35px",
                         }}
                     >
                         Tech Development Agency
@@ -49,6 +49,9 @@ const AboutUs = () => {
                             fontFamily: theme.fonts.primary,
                             color: theme.colors.textDark,
                             fontSize: theme.fontSize.paragraph,
+                            fontWeight: theme.fontWeight.light,
+                            lineHeight: "1.5",
+                            marginBottom: "35px",
                         }}
                     >
                         Lorem ipsum dolor sit amet consectetur. Elementum nibh vulputate
@@ -59,7 +62,7 @@ const AboutUs = () => {
 
                     {/* Button */}
                     <CustomButton
-                        buttonClass="w-[150px] h-[48px]" // Button size
+                        buttonClass="w-[150px] h-[44px]" // Button size
                         text="See More"
                     />
                 </div>
