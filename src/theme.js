@@ -6,6 +6,8 @@ const theme = {
         background_primary: "#FFFFFF", // Primary background color
         background_secondary: "#FBFBFB", // Secondary background color
         hover: "#1C3A6A", // Color for hover effects
+        shadowColor: "#F0F0F0",
+        cardBorder: "1px solid rgba(255, 255, 255, 0.25)" /* White color with 25% opacity */
     },
     fonts: {
         primary: "Inter, sans-serif", // Primary font
@@ -41,6 +43,7 @@ const theme = {
     boxShadow: {
         light: "0px 2px 4px rgba(0, 0, 0, 0.1)", // Light shadow
         medium: "0px 4px 6px rgba(0, 0, 0, 0.2)", // Medium shadow
+        serviceCard: "4px 4px 1px rgba(240, 240, 240, 1)"
     },
 };
 
