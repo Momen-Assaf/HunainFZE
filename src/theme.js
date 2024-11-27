@@ -3,11 +3,13 @@ const theme = {
         primary: "#1E407D", // Primary color
         textLight: "#FFFFFF", // Light text color
         textDark: "#363636", // Dark text color
+        placeHolderText: "1px solid rgba(255, 255, 255, 0.9)", /* white color with 25% opacity */
         background_primary: "#FFFFFF", // Primary background color
         background_secondary: "#FBFBFB", // Secondary background color
+        primaryLightWithOpacity: "rgba(30, 64, 125, 0.75)",
         hover: "#1C3A6A", // Color for hover effects
         shadowColor: "#F0F0F0",
-        cardBorder: "1px solid rgba(0, 0, 0, 0.25)" /* black color with 25% opacity */
+        cardBorder: "1px solid rgba(0, 0, 0, 0.25)", /* black color with 25% opacity */
     },
     fonts: {
         primary: "Inter, sans-serif", // Primary font
