@@ -1,6 +1,7 @@
 import AboutUs from "../../components/AboutUs"
 import Effect from "./components/Effect"
 import HeroSection from "./components/HeroSection"
+import OurServices from "./components/OurServices"
 
 const LandingPage = () => {
   return (
@@ -8,6 +9,7 @@ const LandingPage = () => {
       <HeroSection />
       <Effect />
       <AboutUs />
+      <OurServices />
     </div>
   )
 }
