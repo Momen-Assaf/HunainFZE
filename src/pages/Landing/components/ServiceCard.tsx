@@ -1,3 +1,4 @@
+import { useState } from "react";
 import theme from "../../../theme";
 
 const ServiceCard = ({
@@ -7,14 +8,18 @@ const ServiceCard = ({
     className = "",
     logoClass = "",
 }) => {
+    const [isHovered, setIsHovered] = useState(false);
 
     return (
         <div
-            className={`relative w-[400px] h-[400px] px-[25px] pt-10 hover:scale-105 hover:border-[${theme.colors.primary}] transition-transform border ${className}`}
+            className={`relative w-[400px] h-[400px] px-[25px] pt-10 hover:scale-105 transition-transform border ${className}`}
+            onMouseEnter={() => setIsHovered(true)}
+            onMouseLeave={() => setIsHovered(false)}
             style={{
-                borderColor: theme.colors.cardBorder,
+                borderColor: isHovered ? theme.colors.primary : theme.colors.cardBorder,
                 boxShadow: theme.boxShadow.serviceCard,
-                borderRadius: theme.borderRadius.lg
+                borderRadius: theme.borderRadius.lg,
+                transition: "border-color 0.3s ease-in-out",
             }}
         >
             <img
