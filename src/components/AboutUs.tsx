@@ -15,7 +15,7 @@ const AboutUs = () => {
         >
             <div className="container mx-auto flex flex-col lg:flex-row items-center gap-10 px-8 py-16">
                 {/* Left Section */}
-                <div className="flex flex-col flex-1 items-start">
+                <div className="flex flex-col flex-1 items-start pb-6">
                     {/* Heading */}
                     <h2
                         style={{
