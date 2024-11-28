@@ -5,7 +5,7 @@ import { arrowIcon } from "../../../assets";
 const HeroSection = () => {
   return (
     <section
-      className="container mx-auto flex flex-col items-center space-y-8 pt-[100px]"
+      className="container mx-auto flex flex-col items-center space-y-8 pt-[100px] mb-[50px]"
       id="hero"
     >
       {/* Text and Button Section */}
@@ -38,7 +38,7 @@ const HeroSection = () => {
         {/* Right Section */}
         <div className="flex-1 flex flex-col">
           <p
-            className="text-start pb-[35px]"
+            className="text-start pb-5 pt-5"
             style={{
               fontFamily: theme.fonts.primary,
               color: theme.colors.textDark,

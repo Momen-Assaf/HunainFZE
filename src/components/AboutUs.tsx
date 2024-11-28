@@ -5,7 +5,7 @@ import { logo } from "../assets";
 const AboutUs = () => {
     return (
         <section
-            className="w-full bg-white shadow-md py-16"
+            className="w-ful shadow-md pb-16"
             id="aboutUs"
             style={{
                 backgroundColor: theme.colors.background_primary,
