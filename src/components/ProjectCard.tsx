@@ -6,6 +6,7 @@ const ProjectCard = ({
   hoverImg = "/hover-image.png",
   url = "https://example.com",
   className = "", // Default className (empty string)
+  cardStyle = {},
 }) => {
   const [hovered, setHovered] = useState(false);
 
@@ -25,6 +26,7 @@ const ProjectCard = ({
         background: theme.colors.textDark,
         transition: "transform 0.3s ease, box-shadow 0.3s ease",
         boxShadow: hovered ? "0px 10px 20px rgba(0, 0, 0, 0.2)" : "none", // Add shadow on hover
+        ...cardStyle,
       }}
     >
       <div className="relative w-full h-full">
