@@ -27,13 +27,13 @@ const theme = {
         black: 900, // Black font weight
     },
     fontSize: {
-        small: "14px", // Font size for smaller text
-        medium: "20px", // Font size of 20px
-        paragraph: "24px",
-        heading2: "28px",
-        large: "32px", // Font size for headers
-        heading1: "36px",
-        xLarge: "96px", // Extra-large font size
+        small: "12px",       // Standard small text size for captions or notes
+        medium: "16px",      // Base size for body text
+        paragraph: "20px",   // Slightly larger for emphasis in paragraphs
+        heading2: "24px",    // Subheadings
+        large: "32px",       // Large text for headers
+        heading1: "40px",    // Main headings
+        xLarge: "80px",      // Extra-large text for titles or display text
     },
     borderRadius: {
         sm: "5px", // Small border radius

@@ -13,6 +13,7 @@ const CustomButton = ({
             style={{
                 backgroundColor: theme.colors.primary,
                 fontFamily: theme.fonts.primary,
+                fontSize: theme.fontSize.paragraph,
                 borderRadius: theme.borderRadius.md,
                 boxShadow: `0px 2px 4px rgba(0, 0, 0, 0.2)`,
             }}

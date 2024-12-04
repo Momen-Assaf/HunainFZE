@@ -10,7 +10,7 @@ const TopBar = () => {
         backgroundColor: theme.colors.background_secondary,
         // borderRadius: theme.borderRadius.lg,
       }}>
-      <div className="container mx-auto flex items-center justify-between px-6 py-4">
+      <div className="w-3/4 mx-auto flex items-center justify-between px-6 py-4">
         {/* Logo Section */}
         <div className="flex items-center">
           <img
@@ -21,7 +21,7 @@ const TopBar = () => {
         </div>
 
         {/* Navigation Links */}
-        <nav className="flex items-center space-x-[60px]">
+        <nav className="flex items-center space-x-[40px]">
           <ScrollableText targetSectionId="hero" text="Home" />
           <ScrollableText targetSectionId="aboutUs" text="About Us" />
           <ScrollableText targetSectionId="ourServices" text="Services" />
@@ -29,7 +29,7 @@ const TopBar = () => {
           <CustomButton
             text="Contact Us"
             icon={arrowIcon}
-            buttonClass=" w-[174px] h-[55px]"
+            buttonClass=" w-[160px] h-[50px]"
           />
         </nav>
       </div>

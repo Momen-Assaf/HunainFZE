@@ -25,7 +25,7 @@ const ScrollableText = ({
             onMouseLeave={() => setIsHovered(false)}
             style={{
                 color: isHovered ? theme.colors.primary : theme.colors.textDark,
-                fontSize: theme.fontSize.medium,
+                fontSize: theme.fontSize.paragraph,
                 fontWeight: theme.fontWeight.semiBold,
                 fontFamily: theme.fonts.primary,
                 transition: "color 0.3s",

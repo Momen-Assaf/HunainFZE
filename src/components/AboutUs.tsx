@@ -5,7 +5,7 @@ import { logo } from "../assets";
 const AboutUs = () => {
     return (
         <section
-            className="w-ful shadow-md pb-16"
+            className="w-full shadow-md pb-16"
             id="aboutUs"
             style={{
                 backgroundColor: theme.colors.background_primary,
@@ -13,7 +13,7 @@ const AboutUs = () => {
                 boxShadow: theme.boxShadow.light,
             }}
         >
-            <div className="container mx-auto flex flex-col lg:flex-row items-center gap-10 px-8 py-16">
+            <div className="w-3/4 mx-auto flex flex-col lg:flex-row items-center gap-10 px-8 py-16">
                 {/* Left Section */}
                 <div className="flex flex-col flex-1 items-start pb-6">
                     {/* Heading */}

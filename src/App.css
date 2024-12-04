@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Sen:wght@400;700;800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Sen:wght@400;700;800&display=swap");
 
 .App {
   text-align: center;
@@ -37,4 +37,10 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.page-container {
+  width: 75%; /* Set the container width to 75% of the screen */
+  margin: 0 auto; /* Center the container horizontally */
+  padding: 16px; /* Optional: Add some padding for spacing */
 }
