@@ -1,5 +1,5 @@
 import './App.css';
-import TopBar from './components/TopBar';
+import TopBar from './components/TopBar/TopBar';
 import LandingPage from './pages/Landing/LandingPage';
 
 function App() {
