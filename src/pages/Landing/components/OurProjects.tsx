@@ -4,9 +4,9 @@ import ProjectCard from "../../../components/ProjectCard";
 
 const OurProjects = () => {
     return (
-        <section className="py-[120px]" id="ourProjects">
+        <section className="w-full mx-auto flex flex-col py-[120px]" id="ourProjects">
             {/* Header */}
-            <div className="text-center mb-[219px]">
+            <div className="text-center lg:mb-[219px] mb-[100px]">
                 <h2
                     style={{
                         fontFamily: theme.fonts.primary,
@@ -18,24 +18,23 @@ const OurProjects = () => {
                     <span style={{ color: theme.colors.primary }}>Projects</span>
                 </h2>
             </div>
-            <div className="container mx-auto flex flex-wrap justify-center">
+            <div className="w-full flex flex-col items-center">
                 <ProjectCard
                     logo={vrZoneLogo}
                     hoverImg={vrZoneHover}
                     url={vrZoneUrl}
-                    className="z-10"
+                    className="z-10 w-11/12 lg:w-3/4 h-[50vw] lg:h-[33vw]"
                     cardStyle={{
-                        transform: "rotate(-15deg)",
-                        margin: "-45px -45px",
+                        marginBottom: "10px",
                     }}
                 />
                 <ProjectCard
                     logo={blueBirdLogo}
                     hoverImg={blueBirdHover}
                     url={blueBirdUrl}
-                    className="z-0"
+                    className="z-0 w-11/12 lg:w-3/4 h-[50vw] lg:h-[33vw]"
                     cardStyle={{
-                        margin: "0 -45px",
+                        margin: "0", // Remove any margins
                     }}
                 />
             </div>
