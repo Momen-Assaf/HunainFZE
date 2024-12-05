@@ -1,3 +1,4 @@
+import { useEffect } from "react"
 import AboutUs from "../../components/AboutUs"
 import ContactUs from "../../components/ContactUs"
 import Effect from "./components/Effect"
@@ -6,6 +7,11 @@ import OurProjects from "./components/OurProjects"
 import OurServices from "./components/OurServices"
 
 const LandingPage = () => {
+
+  useEffect(() => {
+    document.title = "Hunain FZE";
+  }, []);
+
   return (
     <div>
       <HeroSection />
