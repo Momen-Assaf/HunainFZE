@@ -16,7 +16,7 @@ const MenuItems = ({
                 <CustomButton
                     text="Contact Us"
                     icon={arrowIcon}
-                    buttonClass="w-[160px] h-[50px] lg:w-[174px] lg:h-[60px]"
+                    buttonClass="w-[160px] h-[50px] lg:w-[174px] lg:h-[50px]"
                 />
             </nav>
         </div>
