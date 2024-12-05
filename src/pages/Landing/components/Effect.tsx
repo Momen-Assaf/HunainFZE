@@ -4,7 +4,7 @@ const Effect = () => {
     return (
         <div 
         id="effect"
-        className="w-full flex justify-center mt-8">
+        className="flex justify-center mt-8">
             <img
                 src={effect} // Update with your image path
                 alt="Hero Effect"
