@@ -33,6 +33,7 @@ const OurProjects = () => {
                     logo={blueBirdLogo}
                     hoverImg={blueBirdHover}
                     url={blueBirdUrl}
+                    className="z-0"
                     cardStyle={{
                         margin: "0 -45px",
                     }}

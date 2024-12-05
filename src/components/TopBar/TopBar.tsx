@@ -43,7 +43,7 @@ const TopBar = () => {
 
         {/* Sliding Mobile Menu */}
         <div
-          className={`fixed top-0 right-0 h-full w-2/5 max-w-sm shadow-lg transform z-10 ${isMenuOpen ? "translate-x-0" : "translate-x-full"
+          className={`fixed top-0 right-0 h-full w-2/5 max-w-sm shadow-lg transform z-20 ${isMenuOpen ? "translate-x-0" : "translate-x-full"
             } transition-transform duration-300 ease-in-out`}
           style={{
             backgroundColor: theme.colors.background_secondary,
