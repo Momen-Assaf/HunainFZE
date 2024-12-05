@@ -13,16 +13,16 @@ const AboutUs = () => {
                 boxShadow: theme.boxShadow.light,
             }}
         >
-            <div className="w-3/4 mx-auto flex flex-col lg:flex-row items-center gap-10 px-8 py-16">
+            <div className="w-11/12 lg:w-3/4 mx-auto flex flex-col lg:flex-row items-center gap-10 px-8 py-16">
                 {/* Left Section */}
-                <div className="flex flex-col flex-1 items-start pb-6">
+                <div className="flex flex-col flex-1 lg:items-start pb-6">
                     {/* Heading */}
                     <h2
                         style={{
                             fontFamily: theme.fonts.primary,
                             fontSize: theme.fontSize.heading1,
                             fontWeight: theme.fontWeight.extraBold,
-                            marginBottom: "10px", 
+                            marginBottom: "10px",
                         }}
                     >
                         <span style={{ color: theme.colors.textDark }}>About </span>
@@ -44,7 +44,7 @@ const AboutUs = () => {
 
                     {/* Paragraph */}
                     <p
-                        className="text-lg font-light leading-relaxed text-start"
+                        className="text-lg font-light leading-relaxed text-center lg:text-start"
                         style={{
                             fontFamily: theme.fonts.primary,
                             color: theme.colors.textDark,
@@ -60,16 +60,18 @@ const AboutUs = () => {
                         lacus metus vitae vitae nunc blandit.
                     </p>
 
-                    {/* Button */}
-                    <CustomButton
-                        buttonClass="w-[150px] h-[44px]" // Button size
-                        text="See More"
-                    />
+                    <div className="flex justify-center lg:justify-start">
+                        {/* Button */}
+                        <CustomButton
+                            buttonClass="w-[150px] h-[44px]" // Button size
+                            text="See More"
+                        />
+                    </div>
                 </div>
 
                 {/* Right Section */}
                 <div
-                    className="flex-1 flex justify-center items-center bg-opacity-50 ms-[140px] w-[484px] h-[432px]"
+                    className="flex-1 flex justify-center items-center bg-opacity-50 lg:ms-[140px] p-10"
                     style={{
                         backgroundColor: `${theme.colors.primary}80`, // 50% opacity of primary
                         borderRadius: theme.borderRadius.xlg,

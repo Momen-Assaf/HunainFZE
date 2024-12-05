@@ -37,7 +37,7 @@ const HeroSection = () => {
         </div>
 
         {/* Right Section */}
-        <div className="flex-1 flex flex-col items-center p-4">
+        <div className="flex-1 flex flex-col items-center lg:items-start p-4">
           <p
             className="lg:text-start pb-5 pt-5 text-center pl-4"
             style={{
@@ -52,7 +52,7 @@ const HeroSection = () => {
           <CustomButton
             text="Get Started"
             icon={arrowIcon}
-            buttonClass="w-[200px] h-[55px] items-center mt-3"
+            buttonClass="w-[200px] h-[55px] mt-3"
           />
         </div>
       </div>
