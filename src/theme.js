@@ -28,8 +28,10 @@ const theme = {
     },
     fontSize: {
         small: "12px",       // Standard small text size for captions or notes
+        smallMedium: "14px",
         medium: "16px",      // Base size for body text
         paragraph: "20px",   // Slightly larger for emphasis in paragraphs
+        mediumLarge: "22px",
         heading2: "24px",    // Subheadings
         large: "32px",       // Large text for headers
         heading1: "40px",    // Main headings

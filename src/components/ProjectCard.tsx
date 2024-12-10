@@ -1,48 +1,50 @@
-import { useState } from "react";
 import theme from "../theme";
 
 const ProjectCard = ({
-  logo = "/default-image.png",
-  hoverImg = "/hover-image.png",
-  url = "https://example.com",
-  className = "", // Default className (empty string)
-  cardStyle = {},
+    logo = "",
+    hoverImg = [],
+    url = "",
+    cardName = "",
+    cardStyle = {},
+    cardTitle = "",
+    cardDescription = "",
+    cardTags = "",
 }) => {
-  const [hovered, setHovered] = useState(false);
+    return (
+        <div className={`w-[570px] h-[520px] flex flex-col ${cardName}`}
+            style={{
+                ...cardStyle
+            }}>
+            <div>
+                <img src={logo} alt={cardTitle} />
+            </div>
 
-  const handleClick = () => {
-    if (url) {
-      window.open(url, "_blank");
-    }
-  };
+            <div className="text-start border-2 border-gray-300 w-full p-4 flex flex-col gap-y-3">
+                <h2 className=""
+                    style={{
+                        fontFamily: theme.fonts.primary,
+                        fontSize: theme.fontSize.mediumLarge,
+                        fontWeight: theme.fontWeight.medium,
+                        color: theme.colors.textDark,
+                    }}>{cardTitle}</h2>
 
-  return (
-    <div
-      className={`w-[600px] h-[274px] rounded-[15px] flex items-center justify-center cursor-pointer transition-transform transform hover:scale-105 ${className}`}
-      onMouseEnter={() => setHovered(true)}
-      onMouseLeave={() => setHovered(false)}
-      onClick={handleClick}
-      style={{
-        background: theme.colors.textDark,
-        transition: "transform 0.3s ease, box-shadow 0.3s ease",
-        boxShadow: hovered ? "0px 10px 20px rgba(0, 0, 0, 0.2)" : "none", // Add shadow on hover
-        ...cardStyle,
-      }}
-    >
-      <div className="relative w-full h-full">
-        <img
-          src={logo}
-          alt="Logo"
-          className={`absolute w-full h-full object-cover transition-opacity duration-300 ease-in-out ${hovered ? "opacity-0" : "opacity-100"}`} // Default image
-        />
-        <img
-          src={hoverImg}
-          alt="Hovered Logo"
-          className={`absolute w-full h-full object-cover transition-opacity duration-300 ease-in-out ${hovered ? "opacity-100" : "opacity-0"}`} // Hovered image
-        />
-      </div>
-    </div>
-  );
-};
+                <p style={{
+                    fontFamily: theme.fonts.primary,
+                    fontSize: theme.fontSize.medium,
+                    color: theme.colors.textDark,
+                    fontWeight: theme.fontWeight.light,
+                }}>{cardDescription}</p>
+                <p className="uppercase" style={{
+                    fontFamily: theme.fonts.secondary,
+                    fontSize: theme.fontSize.smallMedium,
+                    color: theme.colors.primary,
+                    fontWeight: theme.fontWeight.bold,
+                    letterSpacing: "2px",
+
+                }}>{cardTags}</p>
+            </div>
+        </div>
+    )
+}
 
 export default ProjectCard;

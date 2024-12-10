@@ -4,7 +4,7 @@ import ProjectCard from "../../../components/ProjectCard";
 
 const OurProjects = () => {
     return (
-        <section className="w-full mx-auto flex flex-col py-[120px]" id="ourProjects">
+        <section className="w-11/12 lg:w-3/4 mx-auto flex flex-col py-[120px]" id="ourProjects">
             {/* Header */}
             <div className="text-center lg:mb-[219px] mb-[100px]">
                 <h2
@@ -18,24 +18,15 @@ const OurProjects = () => {
                     <span style={{ color: theme.colors.primary }}>Projects</span>
                 </h2>
             </div>
-            <div className="w-full flex flex-col items-center">
+            <div className="w-full flex flex-col lg:flex-row items-center gap-3">
                 <ProjectCard
                     logo={vrZoneLogo}
-                    hoverImg={vrZoneHover}
-                    url={vrZoneUrl}
-                    className="z-10 w-11/12 lg:w-3/4 h-[50vw] lg:h-[33vw]"
-                    cardStyle={{
-                        marginBottom: "10px",
-                    }}
+                    cardTitle="Web Site"
+                    cardDescription="Lorem ipsum dolor sit amet consectetur. Pretium ac enim sapien egestas aenean dapibus. Diam nunc morbi."
+                    cardTags="Ui Design, font-end/back-end development"
                 />
                 <ProjectCard
                     logo={blueBirdLogo}
-                    hoverImg={blueBirdHover}
-                    url={blueBirdUrl}
-                    className="z-0 w-11/12 lg:w-3/4 h-[50vw] lg:h-[33vw]"
-                    cardStyle={{
-                        margin: "0", // Remove any margins
-                    }}
                 />
             </div>
         </section>
