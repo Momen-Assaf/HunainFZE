@@ -9,7 +9,9 @@ export const vrZoneGames1 = "/assets/images/vrzone_games.png";
 export const vrZoneGames2 = "/assets/images/vr_games2.png";
 
 export const blueBirdLogo = "/assets/images/blue_bird_logo.svg";
-export const blueBirdHover = "/assets/images/blue_bird_hover.svg";
+export const blueBirdHover = "/assets/images/bluebird_hero_section_good.png";
+export const blueBirdFeatured = "/assets/images/bluebird_featured.png";
+export const blueBirdItem = "/assets/images/bluebird_item.png";
 
 /// Icons
 export const arrowIcon = "/assets/images/icons/arrow_right.svg";

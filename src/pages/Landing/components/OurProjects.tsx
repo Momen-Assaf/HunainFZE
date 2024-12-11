@@ -1,10 +1,10 @@
-import { vrZoneLogo, vrZoneHover, vrZoneUrl, blueBirdLogo, blueBirdHover, blueBirdUrl, vrZoneHero, vrZoneGames1, vrZoneGames2 } from "../../../assets";
+import { vrZoneLogo, vrZoneHover, vrZoneUrl, blueBirdLogo, blueBirdHover, blueBirdUrl, vrZoneHero, vrZoneGames1, vrZoneGames2, blueBirdFeatured, blueBirdItem } from "../../../assets";
 import theme from "../../../theme";
 import ProjectCard from "../../../components/ProjectCard";
 
 const OurProjects = () => {
     return (
-        <section className="w-11/12 lg:w-3/4 mx-auto flex flex-col py-[120px]" id="ourProjects">
+        <section className="w-11/12 lg:w-3/4 mx-auto flex flex-col pb-[120px] pt-10" id="ourProjects">
             {/* Header */}
             <div className="text-center mb-[100px]">
                 <h2
@@ -21,7 +21,7 @@ const OurProjects = () => {
             <div className="w-full flex flex-col lg:flex-row items-center gap-3">
                 <ProjectCard
                     logo={vrZoneLogo}
-                    hoverImg={[vrZoneHero, vrZoneGames1, vrZoneGames2]}
+                    hoverImg={[vrZoneLogo, vrZoneHero, vrZoneGames1, vrZoneGames2, vrZoneHover]}
                     url={vrZoneUrl}
                     cardTitle="Web Site"
                     cardDescription="Lorem ipsum dolor sit amet consectetur. Pretium ac enim sapien egestas aenean dapibus. Diam nunc morbi."
@@ -29,7 +29,7 @@ const OurProjects = () => {
                 />
                 <ProjectCard
                     logo={blueBirdLogo}
-                    hoverImg={[blueBirdHover]}
+                    hoverImg={[blueBirdLogo, blueBirdHover, blueBirdFeatured, blueBirdItem]}
                     url={blueBirdUrl}
                     cardTitle="Web Site"
                     cardDescription="Lorem ipsum dolor sit amet consectetur. Pretium ac enim sapien egestas aenean dapibus. Diam nunc morbi."

@@ -1,10 +1,10 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import theme from "../theme";
 
 // Define the type for ProjectCard props
 interface ProjectCardProps {
     logo: string;
-    hoverImg: string[];  // Define hoverImg as an array of strings
+    hoverImg: string[]; // Define hoverImg as an array of strings
     url?: string;
     cardName?: string;
     cardStyle?: React.CSSProperties;
@@ -23,7 +23,6 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
     cardDescription = "",
     cardTags = "",
 }) => {
-    const [hovered, setHovered] = useState(false);
     const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
     const handleClick = () => {
@@ -32,22 +31,15 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
         }
     };
 
-    // Handle mouse hover state and change the image index
-    const handleMouseEnter = () => {
-        setHovered(true);
-        let index = 0;
-        const interval = setInterval(() => {
-            setCurrentImageIndex(index);
-            index = (index + 1) % hoverImg.length;
-        }, 2000); // Change image every 2 seconds
+    useEffect(() => {
+        if (hoverImg.length > 0) {
+            const interval = setInterval(() => {
+                setCurrentImageIndex((prevIndex) => (prevIndex + 1) % hoverImg.length);
+            }, 3000); // Change image every 2 seconds
 
-        return () => clearInterval(interval); // Cleanup on mouse leave
-    };
-
-    const handleMouseLeave = () => {
-        setHovered(false);
-        setCurrentImageIndex(0); // Reset to the first image when not hovered
-    };
+            return () => clearInterval(interval); // Cleanup the interval on unmount
+        }
+    }, [hoverImg]);
 
     return (
         <div
@@ -64,29 +56,23 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
                     borderTopRightRadius: theme.borderRadius.sm,
                 }}
                 onClick={handleClick}
-                onMouseEnter={handleMouseEnter}
-                onMouseLeave={handleMouseLeave}
             >
-                {/* Default logo */}
+                {/* Default logo
                 <img
                     src={logo}
                     alt={cardTitle}
-                    className={`w-full h-full object-cover absolute top-0 left-0 transition-opacity duration-500 ${hovered ? "opacity-0" : "opacity-100"
-                        }`}
-                />
+                    className="w-full h-full object-cover absolute top-0 left-0 transition-opacity duration-500 opacity-100"
+                /> */}
 
-                {/* Loop through all hover images with a delay on each image */}
+                {/* Loop through all hover images */}
                 {hoverImg.length > 0 &&
                     hoverImg.map((image, index) => (
                         <img
                             key={index}
                             src={image}
                             alt={`${cardTitle} Hover ${index + 1}`}
-                            className={`w-full h-full object-cover absolute top-0 left-0 transition-opacity duration-1000 ${hovered && currentImageIndex === index ? "opacity-100" : "opacity-0"
+                            className={`w-full h-full object-cover absolute top-0 left-0 transition-opacity duration-1000 ${currentImageIndex === index ? "opacity-100" : "opacity-0"
                                 }`}
-                        //   style={{
-                        //     transitionDelay: `${index * 200}ms`, // Add delay for each image
-                        //   }}
                         />
                     ))}
             </div>
