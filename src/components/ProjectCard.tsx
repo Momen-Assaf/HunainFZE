@@ -35,9 +35,8 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
         if (hoverImg.length > 0) {
             const interval = setInterval(() => {
                 setCurrentImageIndex((prevIndex) => (prevIndex + 1) % hoverImg.length);
-            }, 3000); // Change image every 2 seconds
-
-            return () => clearInterval(interval); // Cleanup the interval on unmount
+            }, 4000);
+            return () => clearInterval(interval);
         }
     }, [hoverImg]);
 
