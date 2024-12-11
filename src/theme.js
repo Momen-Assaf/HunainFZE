@@ -38,7 +38,7 @@ const theme = {
         xLarge: "80px",      // Extra-large text for titles or display text
     },
     borderRadius: {
-        sm: "5px", // Small border radius
+        sm: "10px", // Small border radius
         md: "15px", // Medium border radius
         lg: "25px", // Large border radius
         xlg: "100px", // Extra-large border radius
@@ -49,6 +49,14 @@ const theme = {
         medium: "0px 4px 6px rgba(0, 0, 0, 0.2)", // Medium shadow
         serviceCard: "4px 4px 1px rgba(240, 240, 240, 1)"
     },
+    letterSpacing: {
+        sm: "1px",
+        md: "2px",
+        lg: "3px",
+        xlg: "4px",
+        extraLg: "5px",
+        extraExtraLg: "6px"
+    }
 };
 
 export default theme;

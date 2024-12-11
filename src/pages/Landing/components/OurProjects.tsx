@@ -6,7 +6,7 @@ const OurProjects = () => {
     return (
         <section className="w-11/12 lg:w-3/4 mx-auto flex flex-col py-[120px]" id="ourProjects">
             {/* Header */}
-            <div className="text-center lg:mb-[219px] mb-[100px]">
+            <div className="text-center mb-[100px]">
                 <h2
                     style={{
                         fontFamily: theme.fonts.primary,
