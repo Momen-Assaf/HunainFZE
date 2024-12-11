@@ -18,7 +18,7 @@ const ProjectCard = ({
 
   return (
     <div
-      className={`w-[600px] h-[274px] rounded-[15px] flex items-center justify-center cursor-pointer transition-transform transform hover:scale-105 ${className}`}
+      className={`w-[600px] lg:h-[274px] rounded-[15px] flex items-center justify-center cursor-pointer transition-transform transform hover:scale-105 ${className}`}
       onMouseEnter={() => setHovered(true)}
       onMouseLeave={() => setHovered(false)}
       onClick={handleClick}

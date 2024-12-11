@@ -1,3 +1,4 @@
+import { useState } from "react";
 import theme from "../theme";
 
 const ProjectCard = ({
@@ -10,6 +11,13 @@ const ProjectCard = ({
     cardDescription = "",
     cardTags = "",
 }) => {
+    const [hovered, setHovered] = useState(false);
+
+    const handleClick = () => {
+        if (url) {
+            window.open(url);
+        }
+    }
     return (
         <div
             className={`w-[570px] h-[520px] flex flex-col ${cardName}`}
@@ -20,9 +28,12 @@ const ProjectCard = ({
             {/* Image container */}
             <div className="w-[570px] h-[330px]"
                 style={{
-                    borderTopLeftRadius: theme.borderRadius.sm,
-                    borderTopRightRadius: theme.borderRadius.sm,
-                }}>
+                    borderRadius: `${theme.borderRadius.sm} ${theme.borderRadius.sm} 0px 0px`
+                }}
+                onClick={handleClick}
+                onMouseEnter={() => setHovered(true)}
+                onMouseLeave={() => setHovered(false)}
+            >
                 <img
                     src={logo}
                     alt={cardTitle}
@@ -33,8 +44,7 @@ const ProjectCard = ({
             {/* Text container */}
             <div className="text-start border-2 border-gray-300 w-full p-6 flex flex-col gap-y-3"
                 style={{
-                    borderBottomLeftRadius: theme.borderRadius.sm,
-                    borderBottomRightRadius: theme.borderRadius.sm,
+                    borderRadius: `0px 0px ${theme.borderRadius.sm} ${theme.borderRadius.sm}`,
                 }}>
                 <p
                     style={{
