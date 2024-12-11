@@ -1,4 +1,4 @@
-import { vrZoneLogo, vrZoneHover, vrZoneUrl, blueBirdLogo, blueBirdHover, blueBirdUrl } from "../../../assets";
+import { vrZoneLogo, vrZoneHover, vrZoneUrl, blueBirdLogo, blueBirdHover, blueBirdUrl, vrZoneHero, vrZoneGames1, vrZoneGames2 } from "../../../assets";
 import theme from "../../../theme";
 import ProjectCard from "../../../components/ProjectCard";
 
@@ -21,12 +21,19 @@ const OurProjects = () => {
             <div className="w-full flex flex-col lg:flex-row items-center gap-3">
                 <ProjectCard
                     logo={vrZoneLogo}
+                    hoverImg={[vrZoneHero, vrZoneGames1, vrZoneGames2]}
+                    url={vrZoneUrl}
                     cardTitle="Web Site"
                     cardDescription="Lorem ipsum dolor sit amet consectetur. Pretium ac enim sapien egestas aenean dapibus. Diam nunc morbi."
                     cardTags="Ui Design, font-end/back-end development"
                 />
                 <ProjectCard
                     logo={blueBirdLogo}
+                    hoverImg={[blueBirdHover]}
+                    url={blueBirdUrl}
+                    cardTitle="Web Site"
+                    cardDescription="Lorem ipsum dolor sit amet consectetur. Pretium ac enim sapien egestas aenean dapibus. Diam nunc morbi."
+                    cardTags="Ui Design, font-end/back-end development"
                 />
             </div>
         </section>

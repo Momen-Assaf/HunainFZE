@@ -1,7 +1,19 @@
 import { useState } from "react";
 import theme from "../theme";
 
-const ProjectCard = ({
+// Define the type for ProjectCard props
+interface ProjectCardProps {
+    logo: string;
+    hoverImg: string[];  // Define hoverImg as an array of strings
+    url?: string;
+    cardName?: string;
+    cardStyle?: React.CSSProperties;
+    cardTitle: string;
+    cardDescription: string;
+    cardTags: string;
+}
+
+const ProjectCard: React.FC<ProjectCardProps> = ({
     logo = "",
     hoverImg = [],
     url = "",
@@ -12,12 +24,31 @@ const ProjectCard = ({
     cardTags = "",
 }) => {
     const [hovered, setHovered] = useState(false);
+    const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
     const handleClick = () => {
         if (url) {
             window.open(url);
         }
-    }
+    };
+
+    // Handle mouse hover state and change the image index
+    const handleMouseEnter = () => {
+        setHovered(true);
+        let index = 0;
+        const interval = setInterval(() => {
+            setCurrentImageIndex(index);
+            index = (index + 1) % hoverImg.length;
+        }, 2000); // Change image every 2 seconds
+
+        return () => clearInterval(interval); // Cleanup on mouse leave
+    };
+
+    const handleMouseLeave = () => {
+        setHovered(false);
+        setCurrentImageIndex(0); // Reset to the first image when not hovered
+    };
+
     return (
         <div
             className={`w-[570px] h-[520px] flex flex-col ${cardName}`}
@@ -26,26 +57,48 @@ const ProjectCard = ({
             }}
         >
             {/* Image container */}
-            <div className="w-[570px] h-[330px]"
+            <div
+                className="w-[570px] h-[330px] relative overflow-hidden"
                 style={{
-                    borderRadius: `${theme.borderRadius.sm} ${theme.borderRadius.sm} 0px 0px`
+                    borderTopLeftRadius: theme.borderRadius.sm,
+                    borderTopRightRadius: theme.borderRadius.sm,
                 }}
                 onClick={handleClick}
-                onMouseEnter={() => setHovered(true)}
-                onMouseLeave={() => setHovered(false)}
+                onMouseEnter={handleMouseEnter}
+                onMouseLeave={handleMouseLeave}
             >
+                {/* Default logo */}
                 <img
                     src={logo}
                     alt={cardTitle}
-                    className="w-full h-full object-cover"
+                    className={`w-full h-full object-cover absolute top-0 left-0 transition-opacity duration-500 ${hovered ? "opacity-0" : "opacity-100"
+                        }`}
                 />
+
+                {/* Loop through all hover images with a delay on each image */}
+                {hoverImg.length > 0 &&
+                    hoverImg.map((image, index) => (
+                        <img
+                            key={index}
+                            src={image}
+                            alt={`${cardTitle} Hover ${index + 1}`}
+                            className={`w-full h-full object-cover absolute top-0 left-0 transition-opacity duration-1000 ${hovered && currentImageIndex === index ? "opacity-100" : "opacity-0"
+                                }`}
+                        //   style={{
+                        //     transitionDelay: `${index * 200}ms`, // Add delay for each image
+                        //   }}
+                        />
+                    ))}
             </div>
 
             {/* Text container */}
-            <div className="text-start border-2 border-gray-300 w-full p-6 flex flex-col gap-y-3"
+            <div
+                className="text-start border-2 border-gray-300 w-full p-6 flex flex-col gap-y-3"
                 style={{
-                    borderRadius: `0px 0px ${theme.borderRadius.sm} ${theme.borderRadius.sm}`,
-                }}>
+                    borderBottomLeftRadius: theme.borderRadius.sm,
+                    borderBottomRightRadius: theme.borderRadius.sm,
+                }}
+            >
                 <p
                     style={{
                         fontFamily: theme.fonts.primary,
