@@ -12,7 +12,7 @@ const ServiceCard = ({
 
     return (
         <div
-            className={`relative w-[400px] h-[400px] px-[25px] pt-10 hover:scale-105 transition-transform border ${className}`}
+            className={`relative w-[400px] h-[400px] px-[25px] pt-10 hover:scale-105 transition-transform border-2 ${className}`}
             onMouseEnter={() => setIsHovered(true)}
             onMouseLeave={() => setIsHovered(false)}
             style={{
