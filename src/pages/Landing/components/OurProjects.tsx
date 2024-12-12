@@ -1,4 +1,4 @@
-import { vrZoneLogo, vrZoneHover, vrZoneUrl, blueBirdLogo, blueBirdHover, blueBirdUrl, vrZoneHero, vrZoneGames1, vrZoneGames2, blueBirdFeatured, blueBirdItem } from "../../../assets";
+import { vrZoneLogo, vrZoneHover, vrZoneUrl, blueBirdLogo, blueBirdHover, blueBirdUrl, vrZoneHero, vrZoneGames1, vrZoneGames2, blueBirdFeatured, blueBirdItem, blueBirdHero } from "../../../assets";
 import theme from "../../../theme";
 import ProjectCard from "../../../components/ProjectCard";
 
@@ -29,7 +29,7 @@ const OurProjects = () => {
                 />
                 <ProjectCard
                     logo={blueBirdLogo}
-                    hoverImg={[blueBirdLogo, blueBirdHover, blueBirdFeatured, blueBirdItem]}
+                    hoverImg={[blueBirdLogo, blueBirdHero, blueBirdFeatured, blueBirdItem]}
                     url={blueBirdUrl}
                     cardTitle="Web Site"
                     cardDescription="Lorem ipsum dolor sit amet consectetur. Pretium ac enim sapien egestas aenean dapibus. Diam nunc morbi."
