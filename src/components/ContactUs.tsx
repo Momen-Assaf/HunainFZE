@@ -1,11 +1,12 @@
 import theme from "../theme";
+import CustomButton from "./CustomButton";
 
 const ContactUs = () => {
     return (
-        <section className="py-[120px]" id="contactUs">
-            <div className="relative w-full max-w-screen-xl mx-auto py-16">
+        <section className="py-[120px] w-11/12 lg:w-3/4 mx-auto" id="contactUs">
+            <div className="relative py-16">
                 {/* Header */}
-                <div className="text-center mb-[90px]">
+                <div className="text-center mb-[60px]">
                     <h2
                         style={{
                             fontFamily: theme.fonts.primary,
@@ -20,15 +21,13 @@ const ContactUs = () => {
 
                 {/* Form container */}
                 <div className="flex flex-col items-center gap-6">
-                    <div className="flex flex-col md:flex-row items-center gap-5">
+                    <div className="w-full flex flex-col md:flex-row items-center gap-5">
                         {/* First Name */}
                         <input
                             id="first-name"
                             type="text"
-                            className="px-4 py-2 focus:outline-none focus:ring-2 focus:ring-primary focus:border-primary"
+                            className="w-full lg:w-1/2 px-4 py-3 focus:outline-none focus:ring-2 focus:ring-primary focus:border-primary"
                             style={{
-                                width: "500px",
-                                height: "60px",
                                 backgroundColor: theme.colors.primaryLightWithOpacity,
                                 color: theme.colors.textLight,
                                 borderRadius: theme.borderRadius.md,
@@ -42,10 +41,8 @@ const ContactUs = () => {
                         <input
                             id="last-name"
                             type="text"
-                            className="px-4 py-2 focus:outline-none focus:ring-2 focus:ring-primary focus:border-primary"
+                            className="w-full lg:w-1/2 px-4 py-3 focus:outline-none focus:ring-2 focus:ring-primary focus:border-primary"
                             style={{
-                                width: "500px",
-                                height: "60px",
                                 backgroundColor: theme.colors.primaryLightWithOpacity,
                                 color: theme.colors.textLight,
                                 borderRadius: theme.borderRadius.md,
@@ -56,15 +53,13 @@ const ContactUs = () => {
                         />
                     </div>
 
-                    <div className="flex flex-col md:flex-row items-center gap-5">
+                    <div className="w-full flex flex-col md:flex-row items-center gap-5">
                         {/* Mobile Number */}
                         <input
                             id="mobile-number"
                             type="tel"
-                            className="px-4 py-2 focus:outline-none focus:ring-2 focus:ring-primary focus:border-primary"
+                            className="w-full lg:w-1/2 px-4 py-3 focus:outline-none focus:ring-2 focus:ring-primary focus:border-primary"
                             style={{
-                                width: "500px",
-                                height: "60px",
                                 backgroundColor: theme.colors.primaryLightWithOpacity,
                                 color: theme.colors.textLight,
                                 borderRadius: theme.borderRadius.md,
@@ -78,10 +73,8 @@ const ContactUs = () => {
                         <input
                             id="email"
                             type="email"
-                            className="px-4 py-2 focus:outline-none focus:ring-2 focus:ring-primary focus:border-primary"
+                            className="w-full lg:w-1/2 px-4 py-3 focus:outline-none focus:ring-2 focus:ring-primary focus:border-primary"
                             style={{
-                                width: "500px",
-                                height: "60px",
                                 backgroundColor: theme.colors.primaryLightWithOpacity,
                                 color: theme.colors.textLight,
                                 borderRadius: theme.borderRadius.md,
@@ -95,10 +88,8 @@ const ContactUs = () => {
                     {/* Message */}
                     <textarea
                         id="message"
-                        className="px-4 py-2 focus:outline-none focus:ring-2 focus:ring-primary focus:border-primary"
+                        className="w-full px-4 py-3 focus:outline-none focus:ring-2 focus:ring-primary focus:border-primary"
                         style={{
-                            width: "1020px",
-                            height: "350px",
                             backgroundColor: theme.colors.primaryLightWithOpacity,
                             color: theme.colors.textLight,
                             borderRadius: theme.borderRadius.md,
@@ -106,6 +97,12 @@ const ContactUs = () => {
                             fontWeight: theme.fontWeight.medium,
                         }}
                         placeholder="Your Message"
+                        rows={5}
+                    />
+
+                    <CustomButton
+                        text="Send Message"
+                        buttonClass="w-[200px] h-[55px] mt-3"
                     />
                 </div>
             </div>
