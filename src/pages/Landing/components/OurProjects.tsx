@@ -4,7 +4,7 @@ import ProjectCard from "../../../components/ProjectCard";
 
 const OurProjects = () => {
     return (
-        <section className="w-11/12 lg:w-3/4 mx-auto flex flex-col pb-[120px] pt-10" id="ourProjects">
+        <section className="w-11/12 lg:w-3/4 mx-auto flex flex-col pt-10" id="ourProjects">
             {/* Header */}
             <div className="text-center mb-[100px]">
                 <h2

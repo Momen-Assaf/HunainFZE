@@ -27,7 +27,7 @@ const HeroSection = () => {
               <span
                 style={{
                   color: theme.colors.primary,
-                  fontWeight: theme.fontWeight.bold,
+                  fontWeight: theme.fontWeight.black,
                 }}
               >
                 Delivery

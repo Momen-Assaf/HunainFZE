@@ -39,7 +39,7 @@ const ServiceCard = ({
             <p className="text-center py-[33px]"
                 style={{
                     color: theme.colors.textDark,
-                    fontFamily: theme.fonts.primary,
+                    fontFamily: theme.fonts.paragraph,
                     fontSize: theme.fontSize.paragraph,
                     fontWeight: theme.fontWeight.light,
                 }}>

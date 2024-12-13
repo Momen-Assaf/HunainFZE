@@ -97,7 +97,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
 
                 <p
                     style={{
-                        fontFamily: theme.fonts.primary,
+                        fontFamily: theme.fonts.paragraph,
                         fontSize: theme.fontSize.medium,
                         color: theme.colors.textDark,
                         fontWeight: theme.fontWeight.light,

@@ -46,7 +46,7 @@ const AboutUs = () => {
                     <p
                         className="text-lg font-light leading-relaxed text-center lg:text-start"
                         style={{
-                            fontFamily: theme.fonts.primary,
+                            fontFamily: theme.fonts.paragraph,
                             color: theme.colors.textDark,
                             fontSize: theme.fontSize.paragraph,
                             fontWeight: theme.fontWeight.light,

@@ -12,7 +12,7 @@ const CustomButton = ({
             className={`relative flex items-center justify-center gap-2 ${buttonClass} text-white font-semibold text-base sm:text-xl rounded-md hover:opacity-90 transition-all`}
             style={{
                 backgroundColor: theme.colors.primary,
-                fontFamily: theme.fonts.primary,
+                fontFamily: theme.fonts.paragraph,
                 fontSize: theme.fontSize.paragraph,
                 borderRadius: theme.borderRadius.md,
                 boxShadow: `0px 2px 4px rgba(0, 0, 0, 0.2)`,

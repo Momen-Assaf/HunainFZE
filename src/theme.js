@@ -12,8 +12,10 @@ const theme = {
         cardBorder: "1px solid rgba(0, 0, 0, 0.25)", /* black color with 25% opacity */
     },
     fonts: {
-        primary: "Inter, sans-serif", // Primary font
-        secondary: "Sen, sans-serif", // Secondary font
+        primary: "'Faustina', serif", // Primary font with fallback
+        secondary: " Sen, sans-serif", // Secondary font with fallback
+        heading: 'Playfair Display SC',
+        paragraph: "Inter, sans-serif",
     },
     fontWeight: {
         thin: 100, // Thin font weight
@@ -35,7 +37,7 @@ const theme = {
         heading2: "24px",    // Subheadings
         large: "32px",       // Large text for headers
         heading1: "40px",    // Main headings
-        xLarge: "80px",      // Extra-large text for titles or display text
+        xLarge: "88px",      // Extra-large text for titles or display text
     },
     borderRadius: {
         sm: "10px", // Small border radius
