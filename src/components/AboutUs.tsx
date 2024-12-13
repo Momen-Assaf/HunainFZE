@@ -70,19 +70,13 @@ const AboutUs = () => {
                 </div>
 
                 {/* Right Section */}
-                <div
-                    className="flex-1 flex justify-center items-center bg-opacity-50 lg:ms-[140px] p-10"
-                    style={{
-                        backgroundColor: `${theme.colors.primary}80`, // 50% opacity of primary
-                        borderRadius: theme.borderRadius.xlg,
-                    }}
-                >
+                <div className="flex-1 flex flex-col justify-center items-center lg:ms-[140px] p-10">
                     <img
-                        className="w-[350px] h-[350px] object-cover"
+                        className="object-cover w-full "
                         alt="About Us Image"
                         src={logo}
                         style={{
-                            borderRadius: theme.borderRadius.full,
+                            borderRadius: theme.borderRadius.sm,
                         }}
                     />
                 </div>
