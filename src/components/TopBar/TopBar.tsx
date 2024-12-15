@@ -24,7 +24,7 @@ const TopBar = () => {
         {/* Logo Section */}
         <div className="flex items-center">
           <img
-            className=" h-12 lg:h-16 object-cover"
+            className="h-12 lg:h-14 object-cover"
             alt="Logo"
             src={logo}
           />
