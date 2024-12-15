@@ -22,5 +22,5 @@ export const designIcon = "/assets/images/icons/design.svg";
 export const menuIcon = "/assets/images/icons/menu.svg";
 
 /// URL
-export const vrZoneUrl = "https://vrzone-ps.com";
+export const vrZoneUrl = "https://vrzone.ps";
 export const blueBirdUrl = "https://bluebirdvapes.com";
