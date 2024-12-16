@@ -4,7 +4,7 @@ import ScrollableText from "./ScrollableText"
 const Footer = () => {
     return (
         <section className="w-full">
-            <div className="w-11/12 lg:w-3/4 flex flex-row mx-auto  ">
+            <div className="w-11/12 lg:w-3/4 flex flex-row mx-auto">
                 {/* Top section */}
                 <div className="flex">
                     {/* Logo Section */}
