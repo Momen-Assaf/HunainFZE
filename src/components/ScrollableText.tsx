@@ -5,6 +5,8 @@ const ScrollableText = ({
     text = "Click Me",
     targetSectionId = "default-section",
     className = "",
+    size = "",
+    font = theme.fonts.primary,
 }) => {
     const [isHovered, setIsHovered] = useState(false);
 
@@ -25,9 +27,9 @@ const ScrollableText = ({
             onMouseLeave={() => setIsHovered(false)}
             style={{
                 color: isHovered ? theme.colors.primary : theme.colors.textDark,
-                fontSize: theme.fontSize.paragraph,
+                fontSize: size,
                 fontWeight: theme.fontWeight.semiBold,
-                fontFamily: theme.fonts.primary,
+                fontFamily: font,
                 transition: "color 0.3s",
             }}
         >

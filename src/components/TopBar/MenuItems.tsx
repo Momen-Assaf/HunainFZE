@@ -1,4 +1,5 @@
 import { arrowIcon } from "../../assets"
+import theme from "../../theme"
 import CustomButton from "../CustomButton"
 import ScrollableText from "../ScrollableText"
 
@@ -9,10 +10,10 @@ const MenuItems = ({
         <div>
             {/* Navigation Links */}
             <nav className={`${className}`}>
-                <ScrollableText targetSectionId="hero" text="Home" />
-                <ScrollableText targetSectionId="aboutUs" text="About Us" />
-                <ScrollableText targetSectionId="ourServices" text="Services" />
-                <ScrollableText targetSectionId="ourProjects" text="Portfolio" />
+                <ScrollableText targetSectionId="hero" text="Home" size={theme.fontSize.paragraph} />
+                <ScrollableText targetSectionId="aboutUs" text="About Us" size={theme.fontSize.paragraph} />
+                <ScrollableText targetSectionId="ourServices" text="Services" size={theme.fontSize.paragraph} />
+                <ScrollableText targetSectionId="ourProjects" text="Portfolio" size={theme.fontSize.paragraph} />
                 <CustomButton
                     text="Contact Us"
                     icon={arrowIcon}
