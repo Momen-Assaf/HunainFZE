@@ -1,4 +1,3 @@
-import { getTextOfJSDocComment } from "typescript";
 import { logo } from "../assets";
 import theme from "../theme";
 import ScrollableText from "./ScrollableText";
@@ -44,7 +43,6 @@ const Footer = () => {
                 </div>
 
             </div>
-
         </footer>
     );
 };
