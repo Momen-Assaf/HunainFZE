@@ -20,19 +20,6 @@ const Footer = () => {
                             src={logo}
                         />
                     </div>
-                    <div className="flex flex-row items-end gap-20">
-                        <ScrollableText text="Privacy Policy" size={theme.fontSize.medium} font={theme.fonts.secondary} />
-                        <ScrollableText text="Terms of Service" size={theme.fontSize.medium} font={theme.fonts.secondary} />
-                    </div>
-                </div>
-                <div className="flex flex-col lg:flex-row justify-between items-center">
-                    {/* Row Section */}
-                    <div className="flex flex-row gap-16 items-start py-10 lg:py-16">
-                        <ScrollableText text="About Us" size={theme.fontSize.medium} font={theme.fonts.secondary} />
-                        <ScrollableText text="Contact Us" size={theme.fontSize.medium} font={theme.fonts.secondary} />
-                        <ScrollableText text="FAQs" size={theme.fontSize.medium} font={theme.fonts.secondary} />
-                        <ScrollableText text="Services" size={theme.fontSize.medium} font={theme.fonts.secondary} />
-                    </div>
                     <div className="items-end py-10 lg:py-16"
                         style={{
                             fontFamily: theme.fonts.secondary,
@@ -40,8 +27,21 @@ const Footer = () => {
                         }}>
                         © 2024 Hunain Free Zone Establishment. All rights reserved.
                     </div>
-                </div>
 
+                </div>
+                <div className="flex flex-col lg:flex-row justify-between items-center">
+                    {/* Row Section */}
+                    <div className="flex lg:flex-row flex-col lg:gap-16 gap-5 items-start py-5 lg:py-10">
+                        <ScrollableText text="Privacy Policy" size={theme.fontSize.medium} font={theme.fonts.secondary} />
+                        <ScrollableText text="About Us" size={theme.fontSize.medium} font={theme.fonts.secondary} />
+                        <ScrollableText text="Contact Us" size={theme.fontSize.medium} font={theme.fonts.secondary} />
+                        <ScrollableText text="FAQs" size={theme.fontSize.medium} font={theme.fonts.secondary} />
+                        <ScrollableText text="Services" size={theme.fontSize.medium} font={theme.fonts.secondary} />
+                        <ScrollableText text="Terms of Service" size={theme.fontSize.medium} font={theme.fonts.secondary} />
+                    </div>
+                    <div className="flex flex-row items-end gap-20">
+                    </div>
+                </div>
             </div>
         </footer>
     );
