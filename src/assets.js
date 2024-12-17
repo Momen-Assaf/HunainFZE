@@ -1,5 +1,5 @@
 /// Images
-export const logo = "/assets/images/logo.svg";
+export const logo = "/assets/images/title_logo.svg";
 export const effect = "/assets/images/Effect.svg";
 
 export const vrZoneLogo = "/assets/images/vr_zone_logo.svg";
