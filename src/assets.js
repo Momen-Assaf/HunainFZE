@@ -20,6 +20,9 @@ export const codeIcon = "/assets/images/icons/development.svg";
 export const mobileIcon = "/assets/images/icons/mobile.svg";
 export const designIcon = "/assets/images/icons/design.svg";
 export const menuIcon = "/assets/images/icons/menu.svg";
+export const facebookIcon = "/assets/images/icons/facebook.svg";
+export const instagramIcon = "/assets/images/icons/instagram.svg";
+export const linkedInIcon = "/assets/images/icons/linked_in.svg";
 
 /// URL
 export const vrZoneUrl = "https://vrzone.ps";
