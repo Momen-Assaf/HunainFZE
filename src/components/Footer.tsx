@@ -1,4 +1,4 @@
-import { logo } from "../assets";
+import { facebookIcon, instagramIcon, linkedInIcon, logo } from "../assets";
 import theme from "../theme";
 import ScrollableText from "./ScrollableText";
 
@@ -20,15 +20,20 @@ const Footer = () => {
                             src={logo}
                         />
                     </div>
-                    <div className="flex flex-row items-end gap-20">
-                        <ScrollableText text="Privacy Policy" size={theme.fontSize.medium} font={theme.fonts.secondary} />
-                        <ScrollableText text="Terms of Service" size={theme.fontSize.medium} font={theme.fonts.secondary} />
+                    <div className="flex flex-row items-end gap-5">
+                        <div className="flex gap-20 pe-5">
+                            <ScrollableText text="Privacy Policy" size={theme.fontSize.medium} font={theme.fonts.secondary} />
+                            <ScrollableText text="Terms of Service" size={theme.fontSize.medium} font={theme.fonts.secondary} />
+                        </div>
+                        <img src={facebookIcon} className="w-[30px]" />
+                        <img src={instagramIcon} className="w-[30px]" />
+                        <img src={linkedInIcon} className="w-[30px]" />
                     </div>
 
                 </div>
                 <div className="flex flex-col lg:flex-row justify-between items-center border-t-2">
                     {/* Row Section */}
-                    <div className="flex lg:flex-row flex-col lg:gap-16 gap-5 items-start lg:py-7">
+                    <div className="flex flex-row lg:gap-16 gap-5 items-start lg:py-7 py-5">
                         <ScrollableText text="About Us" size={theme.fontSize.medium} font={theme.fonts.secondary} />
                         <ScrollableText text="Contact Us" size={theme.fontSize.medium} font={theme.fonts.secondary} />
                         <ScrollableText text="FAQs" size={theme.fontSize.medium} font={theme.fonts.secondary} />
